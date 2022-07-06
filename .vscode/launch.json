@@ -1,0 +1,13 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "hello_structs",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceRoot}/hello_structs/target/debug/hello_structs",
+            "args": [],
+            "cwd": "${workspaceRoot}",
+        }
+    ]
+}
