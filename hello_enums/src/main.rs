@@ -39,4 +39,11 @@ fn main() {
     let coin = Coin::Penny;
     let value = value_in_coin(coin);
     println!("value is {}", value);
+
+    let x: Result<u32, &str> = Ok(2);
+    assert_eq!(x.unwrap(), 2);
+    print!("env ..................");
+    for arg in std::env::args() {
+        println!("{} ", arg)
+    }
 }
