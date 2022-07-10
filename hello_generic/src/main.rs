@@ -37,7 +37,21 @@ fn test_tweet() {
     notify(&tweet);
 }
 
+fn test_lifetime() {
+    {
+        let mut r;
+
+        {
+            let x = 5;
+            r = &x;
+        }
+       
+        println!("r: {}", r);
+    }
+
+}
+
 fn main() {
-    find_max_num();
-    test_tweet();
+    // find_max_num();
+    // test_tweet();
 }
