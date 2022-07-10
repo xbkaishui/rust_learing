@@ -158,10 +158,12 @@ async fn main() -> Result<()> {
     let client = Client::new();
     let result = match  opts.subcmd {
         SubCommand::Get(ref args) => {
-            println!("run get")
+            println!("run get");
+            get(client, args).await?
         },
         SubCommand::Post(ref args) => {
-            println!("run post")
+            println!("run post");
+            post(client, args).await?
         }
     };
     Ok(result)
