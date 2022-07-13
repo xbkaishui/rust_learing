@@ -18,6 +18,6 @@ fn main() {
     println!("In file {}", config.file_name);
     if let Err(e) = run(config) {
         println!("Application error: {}", e);
-        process::exit(1);
+        process::exit(2);
     }
 }
