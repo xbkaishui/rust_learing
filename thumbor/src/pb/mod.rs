@@ -7,7 +7,7 @@ use std::convert::TryFrom;
 
 impl ImageSpec {
     pub fn new(specs: Vec<Spec>) -> Self {
-        Self {specs}
+        Self { specs }
     }
 }
 
