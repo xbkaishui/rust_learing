@@ -4,7 +4,7 @@ use hex_literal::hex;
 use std::time::{Duration, Instant};
 use std::thread::sleep;
 
-
+// test blake performance
 fn test_blake2() {
     println!("start");
     let now = Instant::now();
