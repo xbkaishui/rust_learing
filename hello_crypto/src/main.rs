@@ -4,6 +4,8 @@ use hex_literal::hex;
 use std::time::{Duration, Instant};
 use std::thread::sleep;
 
+use aes::{Block, Block8};
+
 // test blake performance
 fn test_blake2() {
     println!("start");
@@ -15,8 +17,10 @@ fn test_blake2() {
         let res = hasher.finalize();
     }
     println!("{}", now.elapsed().as_millis());
-  
-    
+}
+
+fn test_aesni() {
+
 }
 
 
